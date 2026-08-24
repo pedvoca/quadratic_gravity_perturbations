@@ -3,7 +3,7 @@
 Wolfram Language notebooks for deriving the linear scalar perturbation equations of quadratic gravity about a spatially flat FLRW background.  The calculation uses the Stelle action
 
 \[
-\mathcal{L}=R+\alpha R^2+\beta W_{\mu\nu\rho\sigma}W^{\mu\nu\rho\sigma},
+$\mathcal{L}=R+\alpha R^2+\beta W_{\mu\nu\rho\sigma}W^{\mu\nu\rho\sigma}$,
 \]
 
 and follows the longitudinal-gauge dust system through its sub-horizon, quasi-static Fourier-space reduction.
