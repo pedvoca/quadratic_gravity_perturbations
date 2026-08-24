@@ -2,9 +2,7 @@
 
 Wolfram Language notebooks for deriving the linear scalar perturbation equations of quadratic gravity about a spatially flat FLRW background.  The calculation uses the Stelle action
 
-\[
-$\mathcal{L}=R+\alpha R^2+\beta W_{\mu\nu\rho\sigma}W^{\mu\nu\rho\sigma}$,
-\]
+$$LL=R+\alpha R^2+\beta W_{\mu\nu\rho\sigma}W^{\mu\nu\rho\sigma}$$,
 
 and follows the longitudinal-gauge dust system through its sub-horizon, quasi-static Fourier-space reduction.
 
@@ -30,12 +28,12 @@ xAct registrations persist within a Mathematica kernel.  Begin from a fresh kern
 1. Open `notebooks/QuadraticGravity_PerturbedFLRW.nb`.
 2. Start a fresh kernel, then evaluate all cells in order.
 3. Follow the final **Conformally-flat, sub-horizon and Fourier reduction** section.  It extracts the normal-normal and traceless spatial scalar equations and obtains:
-   - the gravitational slip \(Q(k,a)=\Phi/\Psi\),
-   - the modified Poisson factor \(f_Q(k,a)\), and
+   - the gravitational slip $Q(k,a)=\Phi/\Psi$,
+   - the modified Poisson factor $f_Q(k,a)$, and
    - the quasi-static dust-growth equation
-     \[
+     $$
      \ddot\delta+2H\dot\delta+f_Q(k,a)\,\bar\rho_m\delta\simeq0.
-     \]
+     $$
 
 The notebooks contain saved outputs from prior evaluations.  They are useful for inspection, but a fresh evaluation is the authoritative reproducibility check.
 
