@@ -1,0 +1,23 @@
+# macOS and editor metadata
+.DS_Store
+.idea/
+.vscode/
+
+# Wolfram temporary, backup, and generated files
+*.nb~
+*.mx
+*.mx.gz
+*.m~
+*.wl~
+*.out
+
+# Generated exports and report artifacts
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.tex
+*.aux
+*.log
+*.synctex.gz
