@@ -33,11 +33,7 @@ xAct registrations persist within a Mathematica kernel.  Begin from a fresh kern
    \(k^2/(a^2H^2)\gg1\) and applies the quasi-static limit only to the metric potentials. It extracts the normal-normal and traceless spatial scalar equations and obtains:
    - the gravitational slip $Q(k,a)=\Phi/\Psi$,
    - the modified Poisson factor $f_Q(k,a)$, and
-   - the quasi-static dust-growth equation and effective Newton coupling
-     $$
-     \ddot\delta+2H\dot\delta-4\pi G_{\rm eff}(k,a)\,\bar\rho_m\delta\simeq0,
-     \qquad G_{\rm eff}(k,a)=-2f_Q(k,a)G.
-     $$
+   - the quasi-static dust-growth equation and effective Newton coupling: \(\ddot{\delta}+2H\dot{\delta}-4\pi G_{\mathrm{eff}}(k,a)\,\bar{\rho}_{m}\delta\simeq0\), with \(G_{\mathrm{eff}}(k,a)=-2f_Q(k,a)G\).
 
 The notebooks contain saved outputs from prior evaluations.  They are useful for inspection, but a fresh evaluation is the authoritative reproducibility check.
 
