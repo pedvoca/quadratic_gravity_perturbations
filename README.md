@@ -1,20 +1,22 @@
-# Quadratic-gravity cosmological perturbations
+# Quadratic-gravity FLRW perturbations
 
-Wolfram Language notebooks for deriving the linear scalar perturbation equations of quadratic gravity about a spatially flat FLRW background.  The calculation uses the Stelle action
+Wolfram Language notebooks deriving the linear scalar perturbation equations of quadratic gravity about a spatially flat FLRW background. The calculation uses the Stelle action
 
-$$LL=R+\alpha R^2+\beta W_{\mu\nu\rho\sigma}W^{\mu\nu\rho\sigma}$$,
+$$
+\mathcal{L}=R+\alpha R^2+\beta W_{\mu\nu\rho\sigma}W^{\mu\nu\rho\sigma},
+$$
 
-and follows the longitudinal-gauge dust system through its sub-horizon, quasi-static Fourier-space reduction.
+and follows longitudinal-gauge dust perturbations through the sub-horizon and quasi-static Fourier reduction.
 
 ## Repository contents
 
 | Notebook | Role |
 | --- | --- |
-| `notebooks/QuadraticGravity_PerturbedFLRW.nb` | **Primary notebook.** Consolidates the field-equation variation, flat-FLRW setup, dust stress tensor and conservation equations, xPand linearization, and the late-time Fourier/slip/growth reduction. |
-| `notebooks/RW_perturbed_QG.nb` | Original xAct/xPert/xPand derivation retained as a source calculation. |
-| `notebooks/perturbedFLRWxpandnotebook.nb` | Original xPand perturbed-FLRW calculation retained as a source calculation. |
+| `notebooks/QuadraticGravity_PerturbedFLRW.nb` | **Primary notebook.** Step-by-step derivation of the field equation, flat-FLRW perturbations, dust conservation equations, xPand linearization, and the Fourier/slip/growth reduction. |
+| `notebooks/RW_perturbed_QG.nb` | Supporting xAct/xPert/xPand calculation. |
+| `notebooks/perturbedFLRWxpandnotebook.nb` | Supporting xPand perturbed-FLRW calculation. |
 
-The primary notebook is self-contained and does not programmatically import either source notebook.  The two source notebooks are versioned so that the derivation history is preserved.
+The primary notebook is self-contained and does not programmatically import the supporting notebooks.
 
 ## Requirements
 
@@ -27,16 +29,18 @@ xAct registrations persist within a Mathematica kernel.  Begin from a fresh kern
 
 1. Open `notebooks/QuadraticGravity_PerturbedFLRW.nb`.
 2. Start a fresh kernel, then evaluate all cells in order.
-3. Follow the final **Conformally-flat, sub-horizon and Fourier reduction** section.  It extracts the normal-normal and traceless spatial scalar equations and obtains:
+3. Follow **Step 7: sub-horizon and quasi-static Fourier reduction**. It uses
+   \(k^2/(a^2H^2)\gg1\) and applies the quasi-static limit only to the metric potentials. It extracts the normal-normal and traceless spatial scalar equations and obtains:
    - the gravitational slip $Q(k,a)=\Phi/\Psi$,
    - the modified Poisson factor $f_Q(k,a)$, and
-   - the quasi-static dust-growth equation
+   - the quasi-static dust-growth equation and effective Newton coupling
      $$
-     \ddot\delta+2H\dot\delta+f_Q(k,a)\,\bar\rho_m\delta\simeq0.
+     \ddot\delta+2H\dot\delta-4\pi G_{\rm eff}(k,a)\,\bar\rho_m\delta\simeq0,
+     \qquad G_{\rm eff}(k,a)=-2f_Q(k,a)G.
      $$
 
 The notebooks contain saved outputs from prior evaluations.  They are useful for inspection, but a fresh evaluation is the authoritative reproducibility check.
 
 ## Scope
 
-This repository intentionally tracks the notebooks and their documentation only.  Manuscript sources, slide decks, PDFs, kernel caches, and Wolfram temporary files are excluded so the derivation history remains compact and reviewable.
+This repository tracks the notebooks and documentation only. Manuscript sources, slide decks, PDFs, kernel caches, and Wolfram temporary files are excluded so the derivation remains compact and reviewable.
